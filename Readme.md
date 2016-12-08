@@ -1,4 +1,4 @@
-rc32c
+crc32c
 ======
 
 Wicked fast crc32c (Castagnoli) CRC implementation for AMD / Intel 
