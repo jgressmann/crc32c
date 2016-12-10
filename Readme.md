@@ -1,10 +1,9 @@
 crc32c
 ======
 
-Wicked fast crc32c (Castagnoli) CRC implementation for AMD / Intel 
-compatible cpus supporting the SSE4.2 instruction set.
-
-A reasonably fast fallback implementation is used for all other cpu types.
+Wraps Google's awesome [crcutil](https://code.google.com/archive/p/crcutil/) 
+crc32c (Castagnoli) CRC implementation in a C library with miminal external 
+dependencies (libc).
 
 ## Usage
 
