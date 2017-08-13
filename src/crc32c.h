@@ -1,6 +1,6 @@
 /* The MIT License (MIT)
  *
- * Copyright (c) 2016 Jean Gressmann <jean@0x42.de>
+ * Copyright (c) 2016, 2017 Jean Gressmann <jean@0x42.de>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -31,7 +31,8 @@
 extern "C" {
 #endif
 
-uint32_t crc32c(const void* ptr, size_t bytes);
+#define crc32c(ptr, bytes) crc32c_update(0, ptr, bytes)
+uint32_t crc32c_update(uint32_t initial, const void* ptr, size_t bytes);
 
 #ifdef __cplusplus
 }

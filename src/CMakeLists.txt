@@ -9,7 +9,7 @@ set(CPACK_PACKAGE_NAME "crc32c")
 set(CPACK_PACKAGE_CONTACT "Jean Gressmann <jean@0x42.de>")
 set(CPACK_PACKAGE_VENDOR "Jean Gressmann")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "High performance crc32c library with minimal dependencies")
-set(CPACK_PACKAGE_VERSION_MAJOR "1")
+set(CPACK_PACKAGE_VERSION_MAJOR "2")
 set(CPACK_PACKAGE_VERSION_MINOR "0")
 set(CPACK_PACKAGE_VERSION_PATCH "0")
 

@@ -68,8 +68,8 @@ CrcSetup() {
 
 extern "C"
 uint32_t
-crc32c(const void* ptr, size_t bytes) {
-    crcutil_interface::UINT64 lo = 0;
+crc32c_update(uint32_t initial, const void* ptr, size_t bytes) {
+    crcutil_interface::UINT64 lo = initial;
     s_Algorithm->Compute(ptr, bytes, &lo);
     return static_cast<uint32_t>(lo);
 }
